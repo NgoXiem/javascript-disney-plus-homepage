@@ -6,4 +6,4 @@ Start JSON Server
 
 json-server --watch disneyPlusMoviesData.json
 
-It get me through and fetch the data for the movie list. 
+It lets me through and fetch the data for the movie list. 
