@@ -88,10 +88,10 @@ videos.forEach((video) => {
 });
 
 // set dynamic height
-// const img = document.querySelector(".carousel-image img");
-// const dot = document.querySelector(".dot");
+const img = document.querySelector(".carousel-image img");
+const dot = document.querySelector(".dot");
 
-// window.addEventListener("load", () => {
-//   carousel.style.height = `${img.clientHeight}px`;
-//   dot.style.minWidth = img.clientWidth;
-// });
+window.addEventListener("resize", () => {
+  carousel.style.height = `${img.clientHeight}px`;
+  dot.style.minWidth = img.clientWidth;
+});

@@ -149,12 +149,13 @@ nav {
 }
 
 /* carousel */
-
+main {
+  position: relative;
+}
 .carousel-container {
   padding: 0 50px 0 50px;
   margin-top: 100px;
   position: relative;
-  min-height: 250px;
 }
 .carousel-image {
   position: relative;
