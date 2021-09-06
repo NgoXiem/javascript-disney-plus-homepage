@@ -3,15 +3,6 @@ const newMovies = document.querySelector(".new");
 const originals = document.querySelector(".originals");
 const trending = document.querySelector(".trending");
 
-// hamburger bar toggle
-const navList = document.querySelector(".list");
-const navBtn = document.querySelector(".nav-btn");
-navBtn.addEventListener("click", (e) => {
-  if (e.target.tagName === "I") {
-    navList.classList.toggle("show-link");
-  }
-});
-
 /**********Display List of movie on the UI *************/
 
 const myFunc = (node, type) => {
@@ -94,4 +85,19 @@ const dot = document.querySelector(".dot");
 window.addEventListener("resize", () => {
   carousel.style.height = `${img.clientHeight}px`;
   dot.style.minWidth = img.clientWidth;
+});
+window.addEventListener("load", () => {
+  carousel.style.height = `${img.clientHeight}px`;
+  dot.style.minWidth = img.clientWidth;
+});
+
+// hamburger bar toggle
+const nav = document.querySelector("nav");
+const navList = document.querySelector(".list");
+const navBtn = document.querySelector(".nav-btn");
+
+navBtn.addEventListener("click", (e) => {
+  if (e.target.tagName === "I") {
+    navList.classList.toggle("show-link");
+  }
 });

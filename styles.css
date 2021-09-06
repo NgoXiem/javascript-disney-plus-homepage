@@ -179,7 +179,7 @@ main {
   bottom: -20px;
   display: flex;
   justify-content: center;
-  z-index: 2;
+  z-index: -2;
 }
 .dot span {
   height: 10px;
