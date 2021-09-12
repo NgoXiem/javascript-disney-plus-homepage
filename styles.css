@@ -170,9 +170,7 @@ main {
 .carousel-image img.active {
   clip-path: circle(150% at 0 50%);
 }
-.carousel-image img:hover {
-  border: 3px solid #fff;
-}
+
 .dot {
   position: absolute;
   bottom: -20px;
