@@ -149,37 +149,40 @@ nav {
 }
 
 /* carousel */
-main {
-  position: relative;
-}
-.carousel-container {
-  padding: 0 50px 0 50px;
-  margin-top: 100px;
-  position: relative;
-}
-.carousel-image {
-  position: relative;
-}
+
 .carousel-image img {
-  position: absolute;
-  border-radius: 10px;
-  width: 100%;
-  height: auto;
   clip-path: circle(0% at 0 50%);
 }
+
 .carousel-image img.active {
   clip-path: circle(150% at 0 50%);
 }
-.carousel-image img:hover {
-  border: 3px solid #fff;
+
+.carousel-container {
+  display: grid;
+  grid-template-areas: "image";
+  margin-top: 100px;
+  position: relative;
 }
+
+.carousel-image {
+  grid-area: image;
+}
+
+.carousel-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 .dot {
   position: absolute;
   bottom: -20px;
   display: flex;
   justify-content: center;
-  z-index: -2;
+  width: 100%;
 }
+
 .dot span {
   height: 10px;
   width: 10px;
@@ -217,9 +220,6 @@ main {
   object-fit: cover;
   width: 100%;
   height: auto;
-  /* z-index: 1;
-  position: absolute;
-  top: 0; */
   opacity: 1;
 }
 .button video {

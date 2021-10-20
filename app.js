@@ -78,19 +78,6 @@ videos.forEach((video) => {
   video.addEventListener("mouseleave", () => video.pause());
 });
 
-// set dynamic height
-const img = document.querySelector(".carousel-image img");
-const dot = document.querySelector(".dot");
-
-window.addEventListener("resize", () => {
-  carousel.style.height = `${img.clientHeight}px`;
-  dot.style.minWidth = img.clientWidth;
-});
-window.addEventListener("load", () => {
-  carousel.style.height = `${img.clientHeight}px`;
-  dot.style.minWidth = img.clientWidth;
-});
-
 // hamburger bar toggle
 const nav = document.querySelector("nav");
 const navList = document.querySelector(".list");
