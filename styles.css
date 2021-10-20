@@ -173,6 +173,10 @@ nav {
   width: 100%;
   height: auto;
   object-fit: contain;
+  clip-path: circle(0% at 0 50%);
+}
+.carousel-image img.active {
+  clip-path: circle(150% at 0 50%);
 }
 
 .dot {
